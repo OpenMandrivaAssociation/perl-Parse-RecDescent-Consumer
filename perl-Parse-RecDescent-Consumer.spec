@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	3
 
 Summary:	Parse::RecDescent::Consumer - reveal text matched through n token transitions
 License:	GPL+ or Artistic
