@@ -2,14 +2,14 @@
 %define upstream_version 1.03
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	5
 
 Summary:	Parse::RecDescent::Consumer - reveal text matched through n token transitions
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Parse/%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://metacpan.org/dist/Parse-RecDescent-Consumer
+Source0:	https://cpan.metacpan.org/authors/id/T/TB/TBONE/Parse-RecDescent-Consumer-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
