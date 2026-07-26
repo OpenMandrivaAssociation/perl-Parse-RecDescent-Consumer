@@ -1,15 +1,13 @@
 %define upstream_name    Parse-RecDescent-Consumer
-%define upstream_version 1.03
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	1.03
+Release:	6
 
 Summary:	Parse::RecDescent::Consumer - reveal text matched through n token transitions
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Parse-RecDescent-Consumer
-Source0:	https://cpan.metacpan.org/authors/id/T/TB/TBONE/Parse-RecDescent-Consumer-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/T/TB/TBONE/Parse-RecDescent-Consumer-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -24,7 +22,7 @@ approach. You simply create a Consumer which records the current
 text about to be parsed. 
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -44,9 +42,7 @@ make test
 %changelog
 * Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 1.30.0-1mdv2010.0
 + Revision: 404286
-- rebuild using %%perl_convert_version
-
-* Wed Jul 23 2008 Thierry Vignaud <tvignaud@mandriva.com> 1.03-4mdv2009.0
+- rebuild using %1.03 Wed Jul 23 2008 Thierry Vignaud <tvignaud@mandriva.com> 1.03-4mdv2009.0
 + Revision: 241810
 - rebuild
 - kill re-definition of %%buildroot on Pixel's request
